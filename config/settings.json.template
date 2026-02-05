@@ -20,9 +20,9 @@
       }
     },
     "memory": {
-      "command": "mcp-server-memory",
-      "args": [],
-      "_install": "npm install -g @modelcontextprotocol/server-memory"
+      "command": "cmd",
+      "args": ["/c", "npx", "-y", "@modelcontextprotocol/server-memory"],
+      "_note": "Windows requires cmd /c wrapper for npx"
     }
   },
   "hooks": {
