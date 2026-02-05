@@ -59,9 +59,18 @@ cp -r skills/* ~/.claude/skills/
 - **PostToolUse/Edit**: Runs TypeScript type checking after file edits
 
 ### MCP Servers
-- Slack integration
-- GitHub integration
-- Memory - persistent knowledge graph across sessions
+
+**Important:** Always use the CLI to add MCP servers, NOT manual JSON editing:
+```bash
+# Memory server (persistent knowledge graph)
+claude mcp add memory -s user -- npx -y @modelcontextprotocol/server-memory
+
+# Slack integration
+claude mcp add slack -s user -e SLACK_BOT_TOKEN=xoxb-... -e SLACK_TEAM_ID=... -- npx -y @modelcontextprotocol/server-slack
+
+# Verify installation
+claude mcp list
+```
 
 ### Custom Commands
 - `/interview` - In-depth user interview to create detailed specs

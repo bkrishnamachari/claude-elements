@@ -19,11 +19,7 @@
         "GITHUB_PERSONAL_ACCESS_TOKEN": "ghp_YOUR-GITHUB-PAT"
       }
     },
-    "memory": {
-      "command": "cmd",
-      "args": ["/c", "npx", "-y", "@modelcontextprotocol/server-memory"],
-      "_note": "Windows requires cmd /c wrapper for npx"
-    }
+    "_memory_note": "DO NOT add MCP servers here manually. Use CLI instead: claude mcp add memory -s user -- npx -y @modelcontextprotocol/server-memory"
   },
   "hooks": {
     "PostToolUse": [
