@@ -34,6 +34,15 @@
             "command": "npx tsc --noEmit 2>&1 | head -20"
           }
         ]
+      },
+      {
+        "matcher": "Edit",
+        "hooks": [
+          {
+            "type": "command",
+            "command": "python -m ruff check --fix 2>&1 | head -20"
+          }
+        ]
       }
     ]
   }
