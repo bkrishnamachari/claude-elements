@@ -1,0 +1,8 @@
+{
+  "permissions": {
+    "allow": [
+      "Bash(New-Item -ItemType Directory -Path \".claude\\\\skills\\\\commit\" -Force)",
+      "Bash(gh auth:*)"
+    ]
+  }
+}
