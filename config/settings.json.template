@@ -20,8 +20,9 @@
       }
     },
     "memory": {
-      "command": "npx",
-      "args": ["-y", "@modelcontextprotocol/server-memory"]
+      "command": "mcp-server-memory",
+      "args": [],
+      "_install": "npm install -g @modelcontextprotocol/server-memory"
     }
   },
   "hooks": {
