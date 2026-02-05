@@ -61,6 +61,7 @@ cp -r skills/* ~/.claude/skills/
 ### MCP Servers
 - Slack integration
 - GitHub integration
+- Memory - persistent knowledge graph across sessions
 
 ### Custom Commands
 - `/interview` - In-depth user interview to create detailed specs
